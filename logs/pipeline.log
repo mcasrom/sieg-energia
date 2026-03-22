@@ -6,3 +6,20 @@
 [2026-03-22 08:32:18] [PARQUET] pvpc:48 stats:2 hoy:24
 [2026-03-22 08:32:19] Monitor Energético completado
 [2026-03-22 08:32:19] ==================================================
+[2026-03-22 08:56:33] ==================================================
+[2026-03-22 08:56:33] SIEG Monitor Energético v2.0 — Inicio
+[2026-03-22 08:56:36] [PVPC] 24 valores para 2026-03-21
+[2026-03-22 08:56:37] [GEN] 12 fuentes para 2026-03-21
+[2026-03-22 08:56:37] [GEN_H] Error: 500 Server Error: Internal Server Error for url: https://apidatos.ree.es/es/datos/generacion/estructura-generacion?time_trunc=hour&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741&start_date=2026-03-21T00:00&end_date=2026-03-21T23:59
+[2026-03-22 08:56:37] [PVPC] 24 valores para 2026-03-22
+[2026-03-22 08:56:38] [GEN] 12 fuentes para 2026-03-22
+[2026-03-22 08:56:38] [GEN_H] Error: 500 Server Error: Internal Server Error for url: https://apidatos.ree.es/es/datos/generacion/estructura-generacion?time_trunc=hour&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741&start_date=2026-03-22T00:00&end_date=2026-03-22T23:59
+[2026-03-22 08:56:38] BD: 48 pvpc · 24 generacion
+[2026-03-22 08:56:38] [PARQUET] pvpc: 48 filas
+[2026-03-22 08:56:38] [PARQUET] pvpc_hoy: 24 filas
+[2026-03-22 08:56:38] [PARQUET] pvpc_stats: 2 filas
+[2026-03-22 08:56:38] [PARQUET] generacion: 24 filas
+[2026-03-22 08:56:38] [PARQUET] gen_hoy: 12 filas
+[2026-03-22 08:56:39] [PARQUET] gen_hora_hoy: 0 filas
+[2026-03-22 08:56:39] Monitor Energético v2.0 completado
+[2026-03-22 08:56:39] ==================================================
