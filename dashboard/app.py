@@ -85,6 +85,7 @@ st.sidebar.markdown("""
     <a href='https://politica-nacional-osint.streamlit.app' target='_blank' style='display:block; color:#4ade80; text-decoration:none; margin-bottom:4px'>📊 SIEG Política Nacional</a>
     <a href='https://fake-news-narrative.streamlit.app' target='_blank' style='display:block; color:#4ade80; text-decoration:none; margin-bottom:4px'>📡 Narrative Radar</a>
     <a href='https://sieg-radar-electoral.streamlit.app' target='_blank' style='display:block; color:#4ade80; text-decoration:none; margin-bottom:4px'>🗳️ España Vota 2026</a>
+    <a href='https://sieg-ipc.streamlit.app' target='_blank' style='display:block; color:#4ade80; text-decoration:none; margin-bottom:4px'>📊 Monitor IPC · Inflación</a>
     <a href='https://sieg-monitor-boe.streamlit.app' target='_blank' style='display:block; color:#4ade80; text-decoration:none; margin-bottom:4px'>📋 Monitor BOE</a>
     <a href='https://t.me/sieg_politica' target='_blank' style='display:block; color:#4ade80; text-decoration:none'>📢 Canal @sieg_politica</a>
 </div>
