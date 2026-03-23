@@ -39,6 +39,14 @@ BASE_DIR = next(
 DB_PATH  = os.path.join(BASE_DIR, "data", "processed", "energia.duckdb")
 EXP_DIR  = os.path.join(BASE_DIR, "data", "exports")
 
+# DEBUG TEMPORAL
+import os
+st.sidebar.markdown("### DEBUG")
+st.sidebar.write("BASE_DIR:", BASE_DIR)
+st.sidebar.write("DB_PATH exists:", os.path.exists(DB_PATH))
+st.sidebar.write("EXP_DIR exists:", os.path.exists(EXP_DIR))
+
+
 # ── Logo ──────────────────────────────────────────────────
 st.markdown("""
 <svg width='100%' viewBox='0 0 680 110' xmlns='http://www.w3.org/2000/svg'>
