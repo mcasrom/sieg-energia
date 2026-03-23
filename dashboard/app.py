@@ -118,12 +118,12 @@ def cargar_datos():
     try:
         if os.path.exists(DB_PATH):
             conn = duckdb.connect(DB_PATH, read_only=True)
-            df_hoy   = conn.execute("SELECT * FROM pvpc WHERE fecha = CURRENT_DATE ORDER BY hora").df()
+            df_hoy   = conn.execute("SELECT * FROM pvpc WHERE fecha = (CURRENT_TIMESTAMP AT TIME ZONE 'Europe/Madrid')::DATE ORDER BY hora").df()
             df_stats = conn.execute("SELECT * FROM pvpc_stats ORDER BY fecha DESC LIMIT 30").df()
-            df_hist  = conn.execute("SELECT * FROM pvpc WHERE fecha >= CURRENT_DATE - INTERVAL 30 DAY ORDER BY datetime").df()
+            df_hist  = conn.execute("SELECT * FROM pvpc WHERE fecha >= (CURRENT_TIMESTAMP AT TIME ZONE 'Europe/Madrid')::DATE - INTERVAL 30 DAY ORDER BY datetime").df()
             try:
-                df_gen   = conn.execute("SELECT * FROM generacion WHERE fecha = CURRENT_DATE ORDER BY valor_mwh DESC").df()
-                df_gen_h = conn.execute("SELECT * FROM generacion WHERE fecha >= CURRENT_DATE - INTERVAL 30 DAY ORDER BY fecha DESC").df()
+                df_gen   = conn.execute("SELECT * FROM generacion WHERE fecha = (CURRENT_TIMESTAMP AT TIME ZONE 'Europe/Madrid')::DATE ORDER BY valor_mwh DESC").df()
+                df_gen_h = conn.execute("SELECT * FROM generacion WHERE fecha >= (CURRENT_TIMESTAMP AT TIME ZONE 'Europe/Madrid')::DATE - INTERVAL 30 DAY ORDER BY fecha DESC").df()
             except:
                 df_gen = pd.DataFrame()
                 df_gen_h = pd.DataFrame()
